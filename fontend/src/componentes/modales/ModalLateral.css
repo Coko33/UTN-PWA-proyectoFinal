@@ -1,0 +1,346 @@
+.form-container {
+  position: absolute;
+  top: 70px;
+  width: 94vw;
+  left: 3vw;
+  background-color: #fff;
+  z-index: 1100;
+  display: none;
+}
+
+.form-container.fixed {
+  position: fixed;
+  height: calc((var(--vh, 1vh) * 100) - 103px);
+}
+
+.form-container.is-open {
+  display: block;
+}
+
+.form-barra-titulo {
+  padding: 0 16px;
+  height: 30px;
+}
+
+.form-titulo {
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0px;
+  line-height: 30px;
+}
+
+.form-boton-cerrar {
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  font-size: 20px;
+  padding-right: 0.5rem;
+}
+
+.scroll-container {
+  position: relative;
+  width: 100%;
+  height: calc((var(--vh, 1vh) * 100) - 149px); /*calc(100vh - 149px); */
+  background-color: #fff;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.scroll-container.agregar {
+  height: calc((var(--vh, 1vh) * 100) - 140px); /*calc(100vh - 140px);*/
+}
+
+.form-content {
+  margin: 0 16px;
+}
+
+.form-banda-nombre {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.form-field-container {
+  margin-bottom: 10px;
+}
+
+.form-field-container.foto {
+  height: max-content;
+}
+
+.form-tag {
+  display: inline;
+  color: white;
+  background-color: black;
+  padding: 0 5px;
+}
+
+.form-field-container.mg-top {
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.contenedor-tag {
+  display: flex;
+  justify-content: end;
+}
+
+.form-field {
+  display: inline;
+  margin-left: 3px;
+}
+
+.form-tag,
+.form-field {
+  font-size: 16px;
+}
+
+/*paginacion*/
+.pagination-container {
+  position: fixed;
+  width: 94vw;
+  bottom: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  /* padding: 0.5rem 1rem; */
+}
+
+.form-boton-agregar.page {
+  display: inline-block;
+  margin: 8px 16px;
+}
+
+.pagination-container button:nth-child(1) {
+  margin-right: 0;
+}
+.pagination-container button:nth-child(3) {
+  margin-left: 0;
+}
+
+.form-field.page {
+  display: inline-block;
+  line-height: 30px;
+  font-size: 12px;
+  margin: 0;
+  padding-top: 8px;
+}
+
+/*inputs*/
+.form-tag.input {
+}
+.form-field.input {
+  margin: 4px 0 20px 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  resize: none;
+  font-family: inherit;
+  font-weight: 300;
+  box-sizing: border-box;
+  border: 0px;
+  background-color: rgb(211, 211, 211);
+  padding: 8px;
+  border-radius: 3px; /*sacar*/
+}
+
+.form-field.input.inputAños {
+  display: inline;
+  font-size: 16px;
+  width: 68px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.form-field.input.inputDiscos {
+}
+
+.container-discos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container-discos-nombre {
+  width: 70%;
+}
+.container-discos-año {
+  width: 25%;
+}
+
+.formDesde {
+  display: inline;
+}
+
+.form-field-bajada.titulo {
+  font-weight: bold;
+}
+
+.form-field-bajada {
+  margin-left: 0px;
+}
+
+.form-img {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 7px;
+}
+
+.form-boton-agregar {
+  display: block;
+  height: 30px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 0;
+  margin: 22px 0;
+  margin-left: auto;
+  font-size: 14px;
+  /* border-radius: 3px; */
+}
+
+.previewImg {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.amarillo {
+  background-color: var(--amarillo);
+}
+.fucsia {
+  background-color: var(--fucsia);
+}
+.verde {
+  background-color: var(--verde);
+}
+
+.validations {
+  color: #de3545;
+  /* font-weight: bold; */
+  display: inline;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+}
+@media (min-width: 900px) {
+  /*900*/
+  .form-container {
+    position: fixed;
+    width: 30%;
+    top: 20px; /*30*/
+    right: 20px; /*30*/
+    left: auto;
+    height: calc((var(--vh, 1vh) * 100) - 100px); /*80vh*/
+  }
+
+  .form-container.form {
+    height: calc((var(--vh, 1vh) * 100) - 40px); /*80vh*/
+  }
+
+  .scroll-container {
+    height: calc((var(--vh, 1vh) * 100) - 206px); /*calc(100vh - 206px);*/
+  }
+  .scroll-container.agregar {
+    height: calc((var(--vh, 1vh) * 100) - 84px); /*calc(100vh - 206px);*/
+  }
+
+  .form-barra-titulo {
+    padding: 0 22px;
+    height: 40px;
+  }
+
+  .form-titulo {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .form-boton-cerrar {
+    height: 40px;
+    font-size: 24px;
+    padding-right: 12px;
+  }
+
+  .form-boton-cerrar:hover {
+    cursor: pointer;
+  }
+
+  .form-content {
+    margin: 10px 0 0 22px;
+    padding-right: 16px;
+  }
+
+  .form-banda-nombre {
+    font-size: 28px;
+  }
+
+  .form-tag,
+  .form-field {
+    font-size: 14px;
+  }
+
+  .form-field.input.inputAños {
+    /* font-size: 16; */
+    width: 78px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .form-boton-agregar {
+    height: 30px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 0;
+    margin: 22px 0;
+    margin-left: auto;
+    font-size: 12px;
+  }
+  .form-boton-agregar:hover {
+    cursor: pointer;
+  }
+  /*paginacion*/
+  .pagination-container {
+    width: 30%;
+    bottom: 20px;
+  }
+
+  .form-field.page {
+    font-size: 10px;
+    line-height: 30px;
+  }
+
+  .pagination-container {
+    position: fixed;
+    bottom: 80px;
+    top: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-content {
+    margin: 60px 0 0 22px;
+    /* height: calc(100vh - 100px);*/
+  }
+  .form-boton-agregar {
+    font-size: 14px;
+  }
+  .form-field.page {
+    line-height: 40px;
+    font-size: 12px;
+  }
+
+  .form-tag,
+  .form-field {
+    font-size: 16px;
+  }
+  .form-boton-agregar {
+    height: 40px;
+  }
+}

@@ -1,0 +1,46 @@
+:root {
+  --naranja: #ff6700;
+  --amarillo: #ffd817;
+  --verde: #38ff00;
+  --fucsia: #ff00ff;
+  --rojoBtn: #ff7777;
+  --verdeBtn: #93ff89;
+  --amarilloBtn: #fade55;
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;800;900&display=swap");
+
+html {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  overflow: hidden;
+
+  /* wedeclare a style rule for the body element like so: body { */
+  /* Location of the image */
+  background-image: url(""); /* Background image is centered vertically and horizontally at all times */
+  background-position: center center; /* Background image doesn’t tile */
+  background-repeat: no-repeat; /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+  background-attachment: fixed; /* This is what makes the background image rescale based on the container’s size */
+  background-size: cover; /* Set a background color that will be displayed while the background image is loading */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#Capa_1 {
+  width: 100px;
+  left: 0;
+}

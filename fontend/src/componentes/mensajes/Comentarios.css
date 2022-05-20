@@ -1,0 +1,47 @@
+.fondoComent {
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 48px);
+  z-index: 400;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(9px);
+  display: none;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  z-index: 10;
+}
+
+.is-open {
+  display: block;
+}
+
+.cuerpo-container {
+  padding: 0 16px;
+}
+
+.container-tituloCom {
+  padding: 16px 0;
+}
+
+.tituloCom {
+  display: inline;
+}
+
+.tituloCom.nom {
+  text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+  .container {
+    top: 16px;
+    width: calc(100% - 32px);
+    margin: 16px;
+  }
+}

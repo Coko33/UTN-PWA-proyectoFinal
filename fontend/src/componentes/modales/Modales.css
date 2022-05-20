@@ -1,0 +1,248 @@
+.footer-container {
+  position: absolute;
+  bottom: 0px;
+  height: 55px;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 900;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(9px);
+}
+
+.footer-masInfo {
+  position: absolute;
+  bottom: 40px;
+  right: calc(5% - 4px);
+  width: 35px;
+  margin: auto;
+}
+
+.footer-masInfo p {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 11px;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@keyframes moviendrew {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#flecha {
+  display: block;
+  animation-name: moviendrew;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-flex-container {
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.footer-boton {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0;
+  font-size: 11px;
+  background-color: black;
+}
+
+.footer-boton:hover {
+  cursor: pointer;
+}
+
+.footer-boton-ref {
+  color: #fff;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  padding: 0 2px;
+}
+
+.footer-icon-ref {
+  width: 12px;
+  margin-right: 5px;
+}
+
+.footer-boton-agregar {
+  border-radius: 50%;
+  border: none;
+  width: 27px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  font-size: 28px;
+}
+
+/*MODAL AGREGAR*/
+
+.modal-agregar-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /*cambiar*/
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  display: none; /*cambiar*/
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(9px);
+}
+
+.is-openAdd {
+  display: block;
+  z-index: 900;
+}
+
+.modal-agregar-contenedorBotones {
+  position: absolute;
+  width: 40%;
+  left: 28%;
+  top: 40%; /*cambiar*/
+  height: 100px;
+  background-color: transparent;
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+
+.modal-agregar-boton {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 2px;
+}
+
+.modal-agregar-boton:hover {
+  cursor: pointer;
+}
+
+.modal-agregar-boton p {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 18px;
+}
+.modal-agregar-boton :first-child {
+  font-size: 20px;
+  margin-right: 4px;
+  color: #fff;
+}
+.modal-agregar-boton :last-child {
+  padding: 1px 10px;
+}
+
+.fucsia {
+  background-color: var(--fucsia);
+}
+.amarillo {
+  background-color: var(--amarillo);
+}
+.verde {
+  background-color: var(--verde);
+}
+.rojoBtn {
+  background-color: var(--rojoBtn);
+}
+.verdeBtn {
+  background-color: var(--verdeBtn);
+}
+
+@media (min-width: 600px) {
+  .footer-container {
+    width: 30%;
+    right: 20px;
+    left: auto;
+    background: transparent;
+    backdrop-filter: none;
+  }
+  .footer-flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-masInfo {
+    bottom: 60px;
+    right: 0;
+    width: 40px;
+    margin: auto;
+  }
+  .footer-masInfo p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-container {
+    height: 80px;
+    padding: 0;
+  }
+  .footer-flex-container {
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 4px;
+  }
+
+  .footer-boton-ref {
+    font-size: 10px;
+    border: solid 1px white;
+    height: 40px;
+    padding: 5px;
+  }
+
+  .footer-icon-ref {
+    width: 14px;
+  }
+
+  .footer-boton-agregar {
+    width: 32px;
+    height: 32px;
+    font-size: 40px;
+  }
+
+  .modal-agregar-contenedorBotones {
+    width: 16%;
+    height: 150px;
+    left: 42%;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .modal-agregar-boton p {
+    padding: 10px 0;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1226px) {
+  .footer-boton-ref {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .footer-boton-ref {
+    font-size: 14px;
+  }
+}

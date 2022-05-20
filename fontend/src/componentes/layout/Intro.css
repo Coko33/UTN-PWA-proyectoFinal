@@ -1,0 +1,128 @@
+.introContainer {
+  position: absolute;
+  display: block;
+  width: 300px;
+  left: calc(50% - 150px);
+  top: calc(50vh - 133px);
+  z-index: 300;
+  animation: aparece-desaparece 4s;
+}
+
+.soloLogo {
+  animation: aparecer 4s;
+}
+
+#bajada {
+  display: block;
+}
+
+.manzana {
+  position: absolute;
+  width: 35%;
+  top: 23%;
+  left: 20%;
+  z-index: 500;
+  animation: scale-down-center 0.8s infinite;
+}
+
+@keyframes aparece-desaparece {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1);
+    transform: translateY(0);
+  }
+  15% {
+    transform: scale(1.05);
+    transform: translateY(-1px);
+  }
+  20% {
+    transform: scale(1.02);
+    transform: translateY(1px);
+  }
+  30% {
+    transform: scale(0.95);
+  }
+  35% {
+    transform: scale(1);
+    transform: translateY(1px);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  45% {
+    transform: scale(1);
+    transform: translateY(-1px);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+  55% {
+    transform: scale(0.95);
+    transform: translateY(0);
+  }
+  60% {
+    transform: scale(0.92);
+    transform: translateY(-1px);
+  }
+  70% {
+    transform: scale(1.02);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(1);
+    transform: translateY(2px);
+  }
+  90% {
+    transform: scale(0.98);
+  }
+  95% {
+    transform: scale(1);
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 600px) {
+  .introContainer {
+    width: 380px;
+    left: calc(50% - 190px);
+    top: calc(50vh - 160px);
+  }
+}

@@ -1,0 +1,10 @@
+.FormularioMusicos {
+  position: absolute;
+
+  top: 200px;
+  background-color: black;
+  border: solid 2px blueviolet;
+
+  padding: 10px;
+  z-index: 1000;
+}

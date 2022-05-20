@@ -1,0 +1,245 @@
+.manzanaMenuBtn {
+  position: absolute;
+  display: block;
+  width: fit-content;
+  margin: 10px;
+  z-index: 100;
+}
+
+.manzanaEstatica {
+  width: 50px;
+  animation: none;
+}
+
+.containerLogoInstrucciones {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1200;
+  animation: none;
+}
+
+.containerLogoInstrucciones.isOpen {
+  display: block;
+  animation: none;
+}
+
+.bordeBlanco {
+  position: absolute;
+  box-sizing: border-box;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  margin: 20px;
+  border: solid 2px white;
+}
+
+.cerrar {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  right: 0;
+  left: auto;
+  margin: 6px;
+  margin-right: 3px;
+}
+
+.cerrar p {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container-logo {
+  position: relative;
+  margin-top: 50px;
+  height: fit-content;
+  width: 140px;
+  margin-left: calc(50% - 70px);
+  z-index: 1000;
+}
+
+.logoHome {
+  animation: none;
+}
+
+.manzanaNav {
+  position: absolute;
+  top: 23%;
+  left: 21%;
+  width: 34%;
+  animation: none;
+}
+
+.containerInstrucciones {
+  position: relative;
+  margin: 30px 40px;
+}
+
+@media (max-height: 600px) {
+  .containerInstrucciones {
+    margin-top: 10px;
+  }
+}
+
+.instrucciones {
+}
+.creditos {
+  margin-top: 35px;
+}
+
+.instrucciones p,
+.cred p {
+  font-size: 12px;
+  color: white;
+  margin: 0;
+}
+
+.cred {
+  margin-top: 10px;
+}
+
+.cred p {
+  text-align: center;
+}
+
+.credBold {
+  font-weight: bold;
+}
+
+.logosAbajo {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 40px;
+}
+.logosSingle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+
+.logosSingle img {
+  width: 100%;
+}
+
+/*?*/
+#Capa_1 {
+  width: 100px;
+  left: 0;
+}
+
+@media (min-width: 900px) {
+  /*600px*/
+  .manzanaMenuBtn {
+    display: none;
+  }
+  .cerrar {
+    display: none;
+  }
+
+  .containerLogoInstrucciones {
+    display: block;
+    width: 25%;
+  }
+
+  .bordeBlanco {
+  }
+
+  .containerInstrucciones {
+    margin-top: 60px;
+  }
+
+  .logosAbajo {
+    margin-bottom: 4px;
+  }
+
+  .container-logo {
+    width: 50%;
+    margin: 25%;
+  }
+
+  .containerInstrucciones {
+    margin: 20px;
+  }
+  .instrucciones {
+    margin: 0;
+  }
+  .creditos {
+    margin-top: 50px;
+  }
+  .instrucciones p,
+  .creditos p {
+    font-size: 10px;
+  }
+
+  .logoHome {
+    animation: none;
+  }
+
+  .manzanaNav {
+    animation: none;
+  }
+
+  /*?*/
+  #Capa_1 {
+    width: auto;
+    height: 116px;
+  }
+
+  .logosAbajo {
+    bottom: 0;
+    margin-bottom: 0;
+  }
+  .logosSingle {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerInstrucciones {
+  }
+  .instrucciones {
+  }
+  .creditos {
+  }
+  .instrucciones p,
+  .creditos p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-logo {
+    width: 50%;
+    margin: 25%;
+  }
+
+  .instrucciones {
+  }
+  .creditos {
+  }
+  .instrucciones p,
+  .creditos p {
+    font-size: 12px;
+  }
+  .logosAbajo {
+    bottom: 10px;
+  }
+}
+
+@media (min-width: 1537px) {
+  .containerInstrucciones {
+    margin: 40px;
+  }
+  .logosAbajo {
+    bottom: 15px;
+  }
+}

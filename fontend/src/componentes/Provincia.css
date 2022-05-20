@@ -1,0 +1,45 @@
+.titulo-provincia {
+  position: absolute;
+  bottom: 55px;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+  z-index: 500;
+}
+
+h1 {
+  color: #ff6700;
+}
+
+.titulo-provincia-span {
+  background-color: black;
+}
+
+label {
+  color: #ff6700;
+}
+
+.ArgVolverBtn {
+  position: absolute;
+  display: block;
+  right: 0;
+  left: auto;
+  width: fit-content;
+  margin: 15px;
+  z-index: 100;
+}
+
+.argIco {
+  width: 35px;
+}
+
+@media (min-width: 1024px) {
+  .titulo-provincia {
+    width: 500px;
+    margin-left: -250px;
+    font-size: 35px;
+  }
+}

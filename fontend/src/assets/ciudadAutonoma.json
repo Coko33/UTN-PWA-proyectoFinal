@@ -1,0 +1,10 @@
+{
+  "nombre_completo": "Ciudad Autónoma de Buenos Aires",
+  "fuente": "IGN",
+  "iso_id": "AR-C",
+  "nombre": "Ciudad Autónoma de Buenos Aires",
+  "id": "02",
+  "categoria": "Ciudad Autónoma",
+  "iso_nombre": "Ciudad Autónoma de Buenos Aires",
+  "centroide": { "lat": -34.6144934119689, "lon": -58.4458563545429 }
+}
